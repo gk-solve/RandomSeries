@@ -27,6 +27,12 @@
 		D8A9812126B0082300ED62F7 /* StandardLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A9811A26B0082300ED62F7 /* StandardLabel.swift */; };
 		D8A9812226B0082300ED62F7 /* StandardLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A9811A26B0082300ED62F7 /* StandardLabel.swift */; };
 		D8A9812326B0082300ED62F7 /* StandardLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A9811A26B0082300ED62F7 /* StandardLabel.swift */; };
+		D8A9812A26B00FB600ED62F7 /* BasicOpPack.mm in Sources */ = {isa = PBXBuildFile; fileRef = D8A9812926B00FB600ED62F7 /* BasicOpPack.mm */; };
+		D8A9812B26B00FB600ED62F7 /* BasicOpPack.mm in Sources */ = {isa = PBXBuildFile; fileRef = D8A9812926B00FB600ED62F7 /* BasicOpPack.mm */; };
+		D8A9812C26B00FB600ED62F7 /* BasicOpPack.mm in Sources */ = {isa = PBXBuildFile; fileRef = D8A9812926B00FB600ED62F7 /* BasicOpPack.mm */; };
+		D8A9813026B0104600ED62F7 /* BasicOp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8A9812E26B0104500ED62F7 /* BasicOp.cpp */; };
+		D8A9813126B0104600ED62F7 /* BasicOp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8A9812E26B0104500ED62F7 /* BasicOp.cpp */; };
+		D8A9813226B0104600ED62F7 /* BasicOp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8A9812E26B0104500ED62F7 /* BasicOp.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +69,13 @@
 		D8A9811826B0082300ED62F7 /* StandardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardView.swift; sourceTree = "<group>"; };
 		D8A9811926B0082300ED62F7 /* StandardButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardButton.swift; sourceTree = "<group>"; };
 		D8A9811A26B0082300ED62F7 /* StandardLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardLabel.swift; sourceTree = "<group>"; };
+		D8A9812526B00FB600ED62F7 /* RandomSeries-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RandomSeries-Bridging-Header.h"; sourceTree = "<group>"; };
+		D8A9812626B00FB600ED62F7 /* RandomSeriesTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RandomSeriesTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		D8A9812726B00FB600ED62F7 /* RandomSeriesUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RandomSeriesUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		D8A9812826B00FB600ED62F7 /* BasicOpPack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicOpPack.h; sourceTree = "<group>"; };
+		D8A9812926B00FB600ED62F7 /* BasicOpPack.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BasicOpPack.mm; sourceTree = "<group>"; };
+		D8A9812E26B0104500ED62F7 /* BasicOp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BasicOp.cpp; sourceTree = "<group>"; };
+		D8A9812F26B0104600ED62F7 /* BasicOp.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BasicOp.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +131,7 @@
 				D8A9811526AFFB1400ED62F7 /* Commons */,
 				D8A9811626AFFB4000ED62F7 /* AppUI */,
 				D8A9811726B0081000ED62F7 /* StandardUI */,
+				D8A9812426B00F4000ED62F7 /* Functions */,
 			);
 			path = RandomSeries;
 			sourceTree = "<group>";
@@ -166,6 +180,20 @@
 				D8A9811826B0082300ED62F7 /* StandardView.swift */,
 			);
 			path = StandardUI;
+			sourceTree = "<group>";
+		};
+		D8A9812426B00F4000ED62F7 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				D8A9812826B00FB600ED62F7 /* BasicOpPack.h */,
+				D8A9812926B00FB600ED62F7 /* BasicOpPack.mm */,
+				D8A9812F26B0104600ED62F7 /* BasicOp.hpp */,
+				D8A9812E26B0104500ED62F7 /* BasicOp.cpp */,
+				D8A9812526B00FB600ED62F7 /* RandomSeries-Bridging-Header.h */,
+				D8A9812626B00FB600ED62F7 /* RandomSeriesTests-Bridging-Header.h */,
+				D8A9812726B00FB600ED62F7 /* RandomSeriesUITests-Bridging-Header.h */,
+			);
+			path = Functions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,13 +263,16 @@
 				TargetAttributes = {
 					D8A980D926AFF49E00ED62F7 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					D8A980EF26AFF4A100ED62F7 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 						TestTargetID = D8A980D926AFF49E00ED62F7;
 					};
 					D8A980FA26AFF4A100ED62F7 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 						TestTargetID = D8A980D926AFF49E00ED62F7;
 					};
 				};
@@ -299,8 +330,10 @@
 			files = (
 				D8A9811E26B0082300ED62F7 /* StandardButton.swift in Sources */,
 				D8A980DE26AFF49E00ED62F7 /* AppDelegate.swift in Sources */,
+				D8A9812A26B00FB600ED62F7 /* BasicOpPack.mm in Sources */,
 				D8A9811B26B0082300ED62F7 /* StandardView.swift in Sources */,
 				D8A9810E26AFF53D00ED62F7 /* RandomSeriesVC.swift in Sources */,
+				D8A9813026B0104600ED62F7 /* BasicOp.cpp in Sources */,
 				D8A9811226AFF79600ED62F7 /* AppCommons.swift in Sources */,
 				D8A9812126B0082300ED62F7 /* StandardLabel.swift in Sources */,
 			);
@@ -312,8 +345,10 @@
 			files = (
 				D8A9811F26B0082300ED62F7 /* StandardButton.swift in Sources */,
 				D8A9810F26AFF53D00ED62F7 /* RandomSeriesVC.swift in Sources */,
+				D8A9812B26B00FB600ED62F7 /* BasicOpPack.mm in Sources */,
 				D8A9811C26B0082300ED62F7 /* StandardView.swift in Sources */,
 				D8A980F526AFF4A100ED62F7 /* RandomSeriesTests.swift in Sources */,
+				D8A9813126B0104600ED62F7 /* BasicOp.cpp in Sources */,
 				D8A9811326AFF79600ED62F7 /* AppCommons.swift in Sources */,
 				D8A9812226B0082300ED62F7 /* StandardLabel.swift in Sources */,
 			);
@@ -325,8 +360,10 @@
 			files = (
 				D8A9812026B0082300ED62F7 /* StandardButton.swift in Sources */,
 				D8A9811026AFF53D00ED62F7 /* RandomSeriesVC.swift in Sources */,
+				D8A9812C26B00FB600ED62F7 /* BasicOpPack.mm in Sources */,
 				D8A9811D26B0082300ED62F7 /* StandardView.swift in Sources */,
 				D8A9810026AFF4A100ED62F7 /* RandomSeriesUITests.swift in Sources */,
+				D8A9813226B0104600ED62F7 /* BasicOp.cpp in Sources */,
 				D8A9811426AFF79600ED62F7 /* AppCommons.swift in Sources */,
 				D8A9812326B0082300ED62F7 /* StandardLabel.swift in Sources */,
 			);
@@ -480,6 +517,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AG69MW5XR8;
 				INFOPLIST_FILE = RandomSeries/Info.plist;
@@ -489,6 +527,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = eu.soleriant.RandomSeries;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RandomSeries/Functions/RandomSeries-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -499,6 +539,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AG69MW5XR8;
 				INFOPLIST_FILE = RandomSeries/Info.plist;
@@ -508,6 +549,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = eu.soleriant.RandomSeries;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RandomSeries/Functions/RandomSeries-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -518,6 +560,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AG69MW5XR8;
 				INFOPLIST_FILE = RandomSeriesTests/Info.plist;
@@ -529,6 +572,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = eu.soleriant.RandomSeriesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RandomSeries/Functions/RandomSeriesTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RandomSeries.app/RandomSeries";
@@ -540,6 +585,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AG69MW5XR8;
 				INFOPLIST_FILE = RandomSeriesTests/Info.plist;
@@ -551,6 +597,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = eu.soleriant.RandomSeriesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RandomSeries/Functions/RandomSeriesTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RandomSeries.app/RandomSeries";
@@ -561,6 +608,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AG69MW5XR8;
 				INFOPLIST_FILE = RandomSeriesUITests/Info.plist;
@@ -571,6 +619,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = eu.soleriant.RandomSeriesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RandomSeries/Functions/RandomSeriesUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = RandomSeries;
@@ -581,6 +631,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AG69MW5XR8;
 				INFOPLIST_FILE = RandomSeriesUITests/Info.plist;
@@ -591,6 +642,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = eu.soleriant.RandomSeriesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RandomSeries/Functions/RandomSeriesUITests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = RandomSeries;

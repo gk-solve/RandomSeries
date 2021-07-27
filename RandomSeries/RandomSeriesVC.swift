@@ -14,6 +14,8 @@ class RandomSeriesVC: UIViewController {
         // Do any additional setup after loading the view.
         
         self.view.backgroundColor = UIColor.blue
+        
+        BasicOpPack().shuffledArray(withElements: 10)
     }
 
 }
