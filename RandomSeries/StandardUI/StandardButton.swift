@@ -1,7 +1,7 @@
 /*
  *  FILENAME : StandardButton.swift
- *  APPID : eu.soleriant.MyLaps
- *  CREATION DATE : 2021, April 2cd
+ *  APPID : eu.soleriant.RandomSeries
+ *  CREATION DATE : 2021, July 27th
  *  AUTHOR : GK
  *  NOTES : -
  *  COPYRIGHT : Copyright © 2021. All rights reserved.

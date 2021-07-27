@@ -1,9 +1,11 @@
-//
-//  AppCommons.swift
-//  RandomSeries
-//
-//  Created by WESTOWN on 27/07/2021.
-//
+/*
+ *  FILENAME : AppCommons.swift
+ *  APPID : eu.soleriant.RandomSeries
+ *  CREATION DATE : 2021, July 27th
+ *  AUTHOR : GK
+ *  NOTES : -
+ *  COPYRIGHT : Copyright © 2021. All rights reserved.
+ */
 
 import Foundation
 import UIKit
