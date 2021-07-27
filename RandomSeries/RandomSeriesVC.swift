@@ -16,7 +16,8 @@ class RandomSeriesVC: UIViewController {
     
     var buttonDim:CGFloat!
     let buttonsView = StandardView()
-    var arrayButtonImagesNormal:[String] = ["Zero.pdf","One.pdf","Two.pdf","Three.pdf","Four.pdf","Five.pdf","Six.pdf","Seven.pdf","Eight.pdf","Nine.pdf"]
+    var arrayButtonImagesNormal:[String] = ["A.pdf","B.pdf","C.pdf","D.pdf","E.pdf","F.pdf","G.pdf","H.pdf","I.pdf","J.pdf"]
+    var arrayLetters:[String] = ["A","B","C","D","E","F","G","H","I","J"]
     
     let resetButton = StandardButton()
     
@@ -159,7 +160,8 @@ class RandomSeriesVC: UIViewController {
     
     @objc func tapRandomButton(sender:StandardButton)
     {
-        displayText = String(format: "%@%i", displayText, sender.tag)
+        //displayText = String(format: "%@%i", displayText, sender.tag)
+        displayText = String(format: "%@%@", displayText, arrayLetters[sender.tag])
         displayLabel.text = displayText
         
         resetButton.isHidden = false
