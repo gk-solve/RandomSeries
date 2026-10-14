@@ -1,10 +1,26 @@
 # RandomSeries
 
-A small iOS app that builds letter sequences from a shuffled keypad.
+A demo iOS app that implements the Fisher-Yates algorithm written in C++ to build random letter sequences on a shuffled keypad.
 
 <p align="center">
   <img src="docs/screenshots/RandomSeries_screenshot.png" alt="RandomSeries running in the iOS Simulator" width="320">
 </p>
+
+## Authors and contributors
+
+| Topic | Sub-topic | Author/Contributor |
+|---|---|---|
+| Project management | JIRA | - |
+| Project management | Versioning with Git | gk-solve |
+| Functional design | | gk-solve |
+| Technical architecture design | Pattern choice | gk-solve |
+| Technical architecture design | Components and frameworks | gk-solve |
+| Development | Code writing | gk-solve (2021) |
+| Development | Code comments | Claude Code (2026) |
+| Development | Cloud services set up | - |
+| Testing | Test environment set up | gk-solve (2021) |
+| Testing | Tests execution | gk-solve |
+| Documentation | README file | Claude Code |
 
 ## How it works
 
