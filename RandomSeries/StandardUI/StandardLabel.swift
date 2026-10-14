@@ -10,8 +10,10 @@
 import Foundation
 import UIKit
 
+/* UILabel configured in a single call */
 class StandardLabel:UILabel
 {
+    /* Basic setup : background, text style, alpha, visibility, interaction */
     func implementStandardLabel(bkgcolor:UIColor,
                                 textalign:NSTextAlignment,
                                 fontname:String,
@@ -36,6 +38,7 @@ class StandardLabel:UILabel
         self.isUserInteractionEnabled = userinteraction
     }
     
+    /* Basic setup plus layer styling (rounded corners, border, layer background) */
     func implementExtendedStandardLabel(bkgcolor:UIColor,
                                         laycornerradius:CGFloat,
                                         laybordercolor:UIColor,
@@ -71,6 +74,7 @@ class StandardLabel:UILabel
     }
 
     
+    /* Shortcut to set the text */
     func display(mytext:String)
     {
         self.text = mytext

@@ -19,9 +19,11 @@
 
     NSMutableArray *theShuffledArray = [[NSMutableArray alloc]init];
     
+    /* Shuffle in C++ ... */
     BasicOp theBasicOp;
     vector<int> theVectorArray = theBasicOp.fisherYatesAlgoCPP(n);
-    
+
+    /* ... then convert the std::vector<int> to an NSMutableArray of NSNumber */
     for(auto it = theVectorArray.begin();it != theVectorArray.end();it++)
     {
         int theNumber = *it;

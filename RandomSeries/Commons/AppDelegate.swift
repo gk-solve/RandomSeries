@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //---------------------------------------------------------------------------------------------------------------------------------//
              
         /* Initial VC launch using the AppCommons class (Singleton)  */
+        /* The window is created in code : Info.plist declares no main storyboard and no scene manifest, so SceneDelegate is not used */
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         

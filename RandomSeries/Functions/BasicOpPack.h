@@ -9,8 +9,10 @@
 
 #import <Foundation/Foundation.h>
 
+/* Objective-C facade over the C++ BasicOp class, so Swift can call it (see RandomSeries-Bridging-Header.h) */
 @interface BasicOpPack : NSObject
 
+/* Random permutation of 0 ... n-1 as NSNumbers ; seen from Swift as shuffledArray(withElements:) */
 -(NSMutableArray*)shuffledArrayWithElements:(int)n;
 
 @end

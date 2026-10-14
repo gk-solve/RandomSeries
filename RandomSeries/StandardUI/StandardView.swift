@@ -10,10 +10,13 @@
 import Foundation
 import UIKit
 
+/* UIView configured in a single call */
 class StandardView:UIView{
-    
+
+    /* Optional inner white border, added by insertInternalFrameWithMargin */
     let internalFrame = UIView()
-        
+
+    /* Basic setup : background, alpha, visibility, interaction */
     func implementStandardView(backgroundColor:UIColor,
                                viewAlpha:CGFloat,
                                hiddenStatus:Bool,
@@ -26,6 +29,7 @@ class StandardView:UIView{
         self.isUserInteractionEnabled = userInteraction
     }
     
+    /* Basic setup plus layer styling (rounded corners, border, layer background) */
     func implementExtendedStandardView(backgroundColor:UIColor,
                                        layerCornerRadius:CGFloat,
                                        layerBorderColor:UIColor,
@@ -49,6 +53,7 @@ class StandardView:UIView{
         self.isUserInteractionEnabled = userInteraction
     }
     
+    /* Adds a rounded white border inset by `margin`. Call it after the view's frame is set */
     func insertInternalFrameWithMargin(margin:CGFloat)
     {
         internalFrame.frame = CGRect(x: margin,

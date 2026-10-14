@@ -11,6 +11,11 @@ import Foundation
 import UIKit
 import CoreGraphics
 
+/*
+ *  Singleton shared by the whole app (AppCommons.shared).
+ *  Holds the root view controller, the colour and font palette,
+ *  and sizes adapted to the screen width (computed once, in init).
+ */
 class AppCommons
 {
         //------------------------------------------//
@@ -32,8 +37,9 @@ class AppCommons
         let heavyFont = "Avenir-Black"
         let obliqueFont = "Avenir-Oblique"
         
+        /* Base font size, set in init according to the screen width */
         var mainPoliceDim:CGFloat = 10
-        
+
         //------------------------------------------//
         /* Commons - dimensions */
 
@@ -50,7 +56,8 @@ class AppCommons
             //let height = UIScreen.main.bounds.height
             
             print ("Screen width: \(width)")
-            
+
+            /* Width ranges (points) : small iPhones / standard iPhones / iPads / larger screens */
             if width >= 320 && width < 375
             {
                 objectWidth = 20

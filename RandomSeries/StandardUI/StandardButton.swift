@@ -10,8 +10,10 @@
 import Foundation
 import UIKit
 
+/* UIButton configured in a single call (background images per state, alpha, visibility, interaction) */
 class StandardButton:UIButton
-{    
+{
+    /* Sets the background image for each state ; pass nil for the states that are not used */
     func implementStandardButton(unselectedenabledbkgimage:UIImage?,
                                  selectedenabledbkgimage:UIImage?,
                                  unselecteddisabledbkgimage:UIImage?,
