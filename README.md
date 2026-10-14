@@ -15,7 +15,7 @@ A demo iOS app that implements the Fisher-Yates algorithm written in C++ to buil
 | Functional design | | gk-solve |
 | Technical architecture design | Pattern choice | gk-solve |
 | Technical architecture design | Components and frameworks | gk-solve |
-| Development | Code writing | gk-solve (2021) |
+| Development | Code writing (Swift, ObjC, ObjC++, C++) | gk-solve (2021) |
 | Development | Code comments | Claude Code (2026) |
 | Development | Cloud services set up | - |
 | Testing | Test environment set up | gk-solve (2021) |
